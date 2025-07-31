@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Cards</title>
+  <link rel="stylesheet" href="C:\Users\sugha\OneDrive\Desktop\CSS PROJECT-3.css">
+</head>
+<body>
+
+  <header>
+    <h1>Delicious Recipes</h1>
+    <select id="cuisineFilter">
+      <option value="all">All Cuisines</option>
+      <option value="italian">Italian</option>
+      <option value="mexican">Mexican</option>
+      <option value="indian">Indian</option>
+    </select>
+  </header>
+
+  <main class="recipe-container">
+
+    <div class="recipe-card" data-cuisine="italian">
+      <img src="https://via.placeholder.com/300x200" alt="Spaghetti Carbonara">
+      <h2>Spaghetti Carbonara</h2>
+      <p class="description">A creamy and savory pasta dish with pancetta and cheese.</p>
+      <div class="ingredients toggle-content">
+        <h3>Ingredients:</h3>
+        <ul>
+          <li>Spaghetti</li>
+          <li>Pancetta</li>
+          <li>Eggs</li>
+          <li>Parmesan cheese</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Boil pasta, cook pancetta, mix eggs and cheese, and combine.</p>
+        <div class="rating">Rating: ⭐⭐⭐⭐☆</div>
+      </div>
+      <button class="toggle-btn">Show More</button>
+    </div>
+
+    <!-- Add more recipe cards here, changing the data-cuisine attribute accordingly -->
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

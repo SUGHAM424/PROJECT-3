@@ -1,0 +1,96 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #ff6f61;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header select {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Recipe Container */
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+.recipe-card:hover {
+  background-color: #fff9f5;
+}
+
+/* Description and Rating */
+.description {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.rating {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #e85a4f;
+}
+
+/* Toggle Content */
+.toggle-content {
+  display: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  header {
+    font-size: 1rem;
+  }
+
+  .recipe-card {
+    padding: 0.5rem;
+  }
+}
